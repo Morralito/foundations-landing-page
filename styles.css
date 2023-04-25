@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --dark-color: #1f2937;
+    --clear-color: #F9FAF8;
+    --secondary-color: #E5E7EB;
+    --button-color: #3882F6;
+    --quote-text: #1F2937;
+}
+/* ⬆️ basic reset & stuff⬆️ */
+
+/* ⬇️  layout ⬇️ */
+
+
+
+
