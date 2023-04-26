@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *,html,body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
 }
 
 body {
@@ -22,8 +22,261 @@ body {
 }
 /* ⬆️ basic reset & stuff⬆️ */
 
-/* ⬇️  layout ⬇️ */
+/*/////////////////////////////////⬇️  layout ⬇️ */
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 12.5%;
+}
+
+.header-links {
+    display: flex;
+    gap: 32px;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    min-height: 45vh;
+    align-items: center;
+    padding: 0 12.5%;
+    gap: 25px;
+}
+
+.hero-description, .placeholder-img{
+    flex: 1;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.placeholder-img {
+    width: 998px;
+    height: 320px;
+    background-color: #6D747D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Below the fold */
+
+.below-the-fold {
+    display: flex;
+    height: 55vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 25%;
+}
+
+h2 {
+    color: var(--dark-color);
+    font-size: 36px;
+    margin: 45px auto;
+}
+
+.img-container {
+    display: flex;
+    gap: 49px;
+    justify-content: center;
+}
+
+.img-container figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.square-img {
+    min-width: 150px;
+    min-height: 150px;
+    width: 160px;
+    height: 160px;
+    background-color: var(--clear-color);
+    border: 5px solid var(--button-color);
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+
+/* Quote */
+
+.big-quote {
+    display: flex;
+    height: 45vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 25%;
+    background-color: var(--secondary-color);
+}
+
+.big-quote figure {
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark-color);
+}
+
+.big-quote > figure > figcaption {
+    font-size: 24px;
+    align-self: flex-end;
+    margin-right: 1.5em;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+/* call to action */
+
+.call-to-action {
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12.5%;
+}
+
+.cta-description {
+    display: flex;
+    flex: 1;
+    height: 150px;
+    background-color: var(--button-color);
+    border-radius: 25px;
+    align-items: center;
+}
+
+.cta-description > div {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 5px;
+    padding-left: 15%;
+}
+
+.cta-description > .sign-up-btn {
+    display: flex;
+    flex: 1;
+    padding-right: 15%;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
+/* footer */
 
+.footer {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /////////////////////////////////⬇️  Formating ⬇️ */
+
+
+/* Header */
+
+.header {
+    background-color: var(--dark-color);
+    color: var(--clear-color);
+    padding-top: 20px;
+}
+
+.header p {
+    font-size: 24px;
+    color: var(--clear-color);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--dark-color);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--clear-color);
+}
+
+.hero p {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.hero-description > .button {
+    background-color: var(--button-color);
+    padding: 8px 24px;
+    border-radius: 5px;
+    width: fit-content;
+    color: var(--clear-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* squares */
+
+figcaption {
+    color: #515B68;
+}
+
+/* Call to action */
+
+.cta-description > div {
+    color: var(--clear-color);
+}
+
+
+.sign-up-btn p{
+    padding: 10px 35px;
+    border: 3px solid white;
+    font-size: 100%;
+    border-radius: 10px;
+    color: var(--clear-color);
+    font-weight: bold;
+    
+}
+
+.sign-up-btn p:hover {
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--dark-color);
+    color: var(--clear-color);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
